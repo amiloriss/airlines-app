@@ -35,8 +35,6 @@ const AirlinesTicketsSettings: React.FC = () => {
         const selectedCurrency = event.target.value;
         const isChecked = event.target.checked;
 
-        console.log(selectedCurrency);
-
         if (isChecked && selectedCurrency) {
             setCurrency(selectedCurrency);
         }
