@@ -1,0 +1,65 @@
+@import url('../../colors/colors.css');
+
+.cardWrapper {
+    margin-bottom: 20px;
+    width: 600px;
+    display: flex;
+
+    .buyTicket{
+        border-right: 1px solid var(--silver-color);
+        width: 30%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+
+        .carrierName {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .buyButton {
+            background-color: var(--background-btn-orange-color);
+            color: var(--white-color);
+            border: none;
+            margin-top: 15px;
+            padding: 10px 30px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+
+    .flightInfo {
+        display: flex;
+        width: 70%;
+        padding: 20px;
+        justify-content: space-around;
+        align-items: flex-start;
+        
+        .departureTime, .arrivalTime {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .departureDate, .arrivalDate {
+            margin-top: 5px;
+            color: var(--light-silver-color);
+        }
+
+        .stops {
+            color: var(--light-silver-color);
+            font-size: 12px;
+            margin-top: 2px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .airplaneIcon{
+                margin-top: 5px;
+                width: 30px;
+                height: 30px;
+                opacity: 0.3;
+            }
+        }
+    }
+}
